@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">tittle-tattle</string>
+    <string name="news_description">news_description</string>
+    <string name="category">General</string>
+    <string name="textview">TextView</string>
+    <string name="head_name">tIttLe - tAttlE</string>
+    <string name="head2">Headlines</string>
+    <string-array name="categories">
+        <item>Entertainment</item>
+        <item>Business</item>
+        <item>Health</item>
+        <item>Technology</item>
+        <item>Science</item>
+        <item>Sports</item>
+    </string-array>
+</resources>

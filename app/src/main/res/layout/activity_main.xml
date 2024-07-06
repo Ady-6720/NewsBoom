@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/pxfuel">
+
+    <FrameLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:background="@drawable/background_shape"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#90262626"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/head_name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="130dp"
+                android:fontFamily="@font/rans____"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="95dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/conso_lab"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="158dp"
+            android:textColor="@color/black"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            android:gravity="center"
+            app:endIconTint="@color/black"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:background="@drawable/backgroundshape2"
+                android:layout_width="350dp"
+                android:padding="14dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="@string/category"
+                android:textSize="20sp"
+                android:fontFamily="@font/conso_lab"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:labelFor="@id/autoCompleteTextView"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="230dp"
+            android:padding="22dp"/>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
